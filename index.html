@@ -5,20 +5,23 @@
   <title>DPP Widget POC</title>
 </head>
 <body>
-  <h1>Carbonfact DPP Widget – POC</h1>
+  <h1>Zeeman DPP</h1>
 
-  <div id="cf-widget-target"></div>
+<script src="https://dpp.carbonfact.com/widget/bootstrap.js"></script>
 
-  <script>
+<script>
   window.CarbonfactWidget.mount({
     productId: 'MzUyNjkzMjUzMi1zdXBwbGllci12',
     accountSlug: 'Zeeman',
-    dppId: 'MzUyNjkzMjUzMi1zdXBwbGllci12',
+    dppId: 'your-dpp-id',
     targetSelector: '#cf-widget-target',
     indicator: 'GHG',
     locale: 'en',
   });
 </script>
+
+<div id="cf-widget-target"></div>
+
 
 </body>
 </html>
