@@ -9,14 +9,16 @@
 
   <div id="cf-widget-target"></div>
 
-  <script
-    src="https://dpp.carbonfact.com/widget/bootstrap.js"
-    data-carbonfact-widget="true"
-    data-account-slug="Zeeman"
-    data-dpp-id="MzUyNjkzMjUzMi1zdXBwbGllci12"
-    data-target-selector="#cf-widget-target"
-    data-indicator="GHG"
-    data-locale="en">
-  </script>
+  <script>
+  window.CarbonfactWidget.mount({
+    productId: 'MzUyNjkzMjUzMi1zdXBwbGllci12',
+    accountSlug: 'Zeeman',
+    dppId: 'MzUyNjkzMjUzMi1zdXBwbGllci12',
+    targetSelector: '#cf-widget-target',
+    indicator: 'GHG',
+    locale: 'en',
+  });
+</script>
+
 </body>
 </html>
